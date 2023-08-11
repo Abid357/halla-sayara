@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12sp"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/journey_date_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:text="Dec 09, 2019"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/journey_status_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15sp"
+            android:layout_toRightOf="@id/journey_date_text_view"
+            android:background="@drawable/rectangle"
+            android:padding="2sp"
+            android:text="SCHEDULED"
+            android:textColor="@color/green"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/journey_cost_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10sp"
+            android:text=""
+            android:textColor="@color/writing"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/journey_ride_id_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5sp"
+        android:layout_marginBottom="10sp"
+        android:text="Ride ID:"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <RelativeLayout
+        android:id="@+id/relativelayout12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/relativelayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/journey_depart_at_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="12sp"
+                android:text="Depart at:"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/journey_departure_time_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/journey_depart_at_text_view"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="12sp"
+                android:text=""
+                android:textColor="@color/orange"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/journey_arrive_at_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/journey_departure_time_text_view"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="12sp"
+                android:text="ETA:"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/journey_arrival_time_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/journey_arrive_at_text_view"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="12sp"
+                android:text=""
+                android:textColor="@color/orange"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/journey_distance_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/journey_arrival_time_text_view"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="12sp"
+                android:text="Distance:"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/journey_distance_value_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/journey_distance_text_view"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="12sp"
+                android:text=""
+                android:textColor="@color/orange"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/relativelayout1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/journey_departure_location_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:maxLines="3"
+                android:text="Szabist Stop 1 - Clifton"
+                android:textColor="@color/colorRed"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relativelayout3"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_below="@id/relativelayout2"
+            android:layout_toRightOf="@id/relativelayout1">
+
+            <View
+                android:layout_width="2sp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5sp"
+                android:background="@color/quantum_grey" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relativelayout3"
+            android:layout_toRightOf="@id/relativelayout1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/journey_arrival_location_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:maxLines="3"
+                android:text="Szabist Stop 1 - Clifton KHI"
+                android:textColor="@color/colorRed"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="@color/black" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/schedule_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10sp"
+            android:background="@drawable/rectangle"
+            android:padding="8sp"
+            android:text="Schedule"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/ride_map_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:layout_toLeftOf="@id/schedule_button"
+            android:background="@drawable/rectangle"
+            android:padding="8sp"
+            android:text="View in Map"
+            android:textColor="@color/writing"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10sp"
+            android:background="@drawable/rectangle"
+            android:padding="8sp"
+            android:text="Cancel"
+            android:textColor="@color/colorRed"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>

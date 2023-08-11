@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item android:title="User">
+        <menu>
+            <item
+                android:id="@+id/nav_journeys"
+                android:icon="@drawable/ic_my_rides"
+                android:title="My Journeys" />
+            <item
+                android:id="@+id/nav_wallet"
+                android:icon="@drawable/ic_wallet"
+                android:title="Wallet" />
+        </menu>
+    </item>
+
+    <item android:title="Driver">
+        <menu>
+            <item
+                android:id="@+id/nav_driver"
+                android:icon="@drawable/ic_driver"
+                android:title="My Rides" />
+            <item
+                android:id="@+id/nav_documents"
+                android:icon="@drawable/ic_documents"
+                android:title="Upload Document" />
+        </menu>
+    </item>
+
+    <item android:title="Other">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings"
+                android:title="Settings" /> <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

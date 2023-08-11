@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".activity.SignupActivity">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorRed">
+
+        <EditText
+            android:id="@+id/name_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Full name"
+            android:inputType="text"
+            android:textSize="20sp" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorRed">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="Email"
+            android:textColorHint="@color/colorRed">
+
+            <EditText
+                android:id="@+id/email_edit_text"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textSize="20sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:paddingBottom="10sp"
+            android:text="\@"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/domain_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:inputType="textNoSuggestions"
+            android:paddingBottom="10sp"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/colorRed">
+
+        <EditText
+            android:id="@+id/phone_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ems="10"
+            android:hint="Phone"
+            android:inputType="number"
+            android:textSize="20sp" />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:text=" Universities"
+        android:textColor="@color/colorRed"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/universities_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/colorRed"
+        android:outlineAmbientShadowColor="@color/colorRed">
+
+    </Spinner>
+
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="80sp"
+        android:background="@drawable/rounded_btn_red"
+        android:text="SignUp"
+        android:textColor="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/have_account_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:text=" Already have an account?"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="20sp"/>
+
+
+</LinearLayout>
+

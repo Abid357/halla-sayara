@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".activity.MapsActivity">
+
+    <TextView
+        android:id="@+id/departure_text_view"
+        android:layout_width="110sp"
+        android:layout_height="50sp"
+        android:gravity="center_vertical|center"
+        android:text="Depart from:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <fragment
+        android:id="@+id/departure_autocomplete_fragment"
+        android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/departure_text_view" />
+
+    <TextView
+        android:id="@+id/arrival_text_view"
+        android:layout_width="110sp"
+        android:layout_height="50sp"
+        android:layout_below="@id/departure_text_view"
+        android:gravity="center_vertical|center"
+        android:text="Arrive to:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <fragment
+        android:id="@+id/arrival_autocomplete_fragment"
+        android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/departure_text_view"
+        android:layout_toRightOf="@id/arrival_text_view" />
+
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/arrival_text_view"
+        android:layout_above="@id/maps_linear_layout"/>
+
+    <LinearLayout
+        android:id="@+id/maps_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/create_journey_button"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/date_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center_vertical|center"
+                android:onClick="onClick"
+                android:padding="15sp"
+                android:text="Select Date"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/time_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/arrival_text_view"
+                android:layout_toRightOf="@id/date_text_view"
+                android:clickable="true"
+                android:gravity="center_vertical|center"
+                android:onClick="onClick"
+                android:padding="15sp"
+                android:text="Select Time"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/create_journey_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10sp"
+        android:background="@drawable/rounded_btn_red"
+        android:text="Create"
+        android:textColor="@color/colorAccent" />
+
+
+</RelativeLayout>

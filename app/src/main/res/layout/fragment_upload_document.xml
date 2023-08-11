@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.UploadDocumentFragment">
+
+
+    <ImageView
+        android:id="@+id/document_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="350sp" />
+
+    <RelativeLayout
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/select_document_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:ems="10"
+            android:background="@drawable/rounded_btn_red"
+            android:textColor="@color/colorAccent"
+            android:layout_below="@id/document_spinner"
+            android:layout_marginTop="20sp"
+            android:text="Select"
+            android:layout_centerInParent="true"/>
+
+        <Spinner
+            android:id="@+id/document_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:layout_marginTop="21sp"
+            android:backgroundTint="@color/colorRed"
+            android:outlineAmbientShadowColor="@color/colorRed"/>
+
+        <Button
+            android:id="@+id/upload_document_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5sp"
+            android:ems="10"
+            android:background="@drawable/rounded_btn_red"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="20sp"
+            android:layout_below="@id/select_document_button"
+            android:text="Upload"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
